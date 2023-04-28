@@ -1,0 +1,89 @@
+.jobs-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: min(1080px, 100%);
+  margin-inline: auto;
+  padding-block: 4rem;
+}
+
+.job.panel {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.job-logo {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+}
+
+.job.panel.featured {
+  border-inline-start: 5px solid var(--colors-primary);
+}
+
+.job-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.job-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--colors-primary);
+  cursor: default;
+}
+
+.chip {
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 2rem;
+  font-size: 0.75em;
+  font-weight: var(--font-weight-regular);
+}
+
+.chip:first-child {
+  margin-inline-start: 0.5rem;
+}
+
+.chip.primary {
+  background-color: var(--colors-primary);
+}
+
+.chip.secondary {
+  background-color: var(--colors-secondary);
+}
+
+.job-title {
+  font-size: 1.125rem;
+  color: var(--colors-secondary);
+  text-decoration: none;
+  transition: color var(--transitions-main);
+}
+
+.job-title:hover {
+  color: var(--colors-primary);
+}
+
+.job-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--colors-sub-text);
+  font-weight: var(--font-weight-regular);
+  cursor: default;
+  user-select: none;
+}
+
+.job-filters {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-inline-start: auto;
+}

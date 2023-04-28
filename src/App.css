@@ -1,0 +1,6 @@
+.header-background {
+  display: block;
+  width: 100%;
+  min-height: 8rem;
+  background-color: var(--colors-primary);
+}

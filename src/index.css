@@ -7,6 +7,7 @@
 img {
   max-width: 100%;
   object-fit: cover;
+  user-select: none;
 }
 
 button,
@@ -31,8 +32,20 @@ a {
   --colors-sub-text: hsl(180, 8%, 52%);
   --font-weight-regular: 500;
   --font-weight-bold: 700;
+  --transitions-main: 0.3s ease-in-out;
 }
 
 body {
-  font: var(--font-weight-regular) 0.9375rem 'League Spartan', sans-serif;
+  font: var(--font-weight-bold) 0.9375rem 'League Spartan', sans-serif;
+  background-color: var(--colors-main-background);
+}
+
+main {
+  padding-inline: 2rem;
+}
+
+.panel {
+  border-radius: 5px;
+  box-shadow: 0px 8px 28px -12px var(--colors-primary);
+  background-color: #fff;
 }
