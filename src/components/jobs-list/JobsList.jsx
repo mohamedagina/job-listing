@@ -6,6 +6,7 @@ import './JobsList.css';
 import { useFetchJobsQuery } from '../../store';
 import { JobPanel } from './JobPanel';
 import { FiltersPanel } from '../filters-panel/FiltersPanel';
+import { SkeletonLoader } from '../skeleton-loader/SkeletonLoader';
 
 export const JobsList = () => {
   const { data, isFetching, error } = useFetchJobsQuery();
@@ -21,7 +22,12 @@ export const JobsList = () => {
     });
   }, [filters, data]);
 
-  if (isFetching) return <div>Loading...</div>;
+  if (isFetching)
+    return (
+      <div className="jobs-list">
+        <SkeletonLoader times={10} />
+      </div>
+    );
   if (error) return <div>Error fetching jobs.</div>;
 
   return (

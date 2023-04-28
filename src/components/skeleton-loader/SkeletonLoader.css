@@ -1,0 +1,27 @@
+.skeleton-loader {
+  position: relative;
+  overflow: hidden;
+  height: 9rem;
+  background-color: var(--colors-skeleton-background);
+  border-radius: 5px;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.skeleton-loader .shimmer {
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  border-radius: inherit;
+  background: linear-gradient(
+    to right,
+    var(--colors-skeleton-background),
+    white,
+    var(--colors-skeleton-background)
+  );
+  animation: shimmer 1.5s infinite;
+}

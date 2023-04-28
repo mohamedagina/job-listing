@@ -29,6 +29,7 @@ a {
   --colors-secondary: hsl(180, 14%, 20%);
   --colors-main-background: hsl(180, 52%, 96%);
   --colors-filter-tablet: hsl(180, 31%, 95%);
+  --colors-skeleton-background: hsl(180, 8%, 80%);
   --colors-sub-text: hsl(180, 8%, 52%);
   --font-weight-regular: 500;
   --font-weight-bold: 700;
