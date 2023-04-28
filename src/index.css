@@ -44,6 +44,12 @@ main {
   padding-inline: 2rem;
 }
 
+@media (max-width: 480px) {
+  main {
+    padding-inline: 1rem;
+  }
+}
+
 .panel {
   border-radius: 5px;
   box-shadow: 0px 8px 28px -12px var(--colors-primary);

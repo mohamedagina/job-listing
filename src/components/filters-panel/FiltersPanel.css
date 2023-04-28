@@ -9,12 +9,58 @@
   gap: 1rem;
 }
 
+.filters-panel .filters {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 0.25rem;
+  overflow-x: auto;
+  scroll-padding-inline: 0.25rem;
+  scroll-snap-type: inline mandatory;
+  overscroll-behavior-inline: contain;
+  --scrollbar-size: 0.3rem;
+  --scrollbar-color: transparent;
+  --scrollbar-thumb-color: var(--colors-primary);
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb-color) var(--scrollbar-color);
+}
+
+.filters-panel .filters > * {
+  scroll-snap-align: end;
+}
+
+.filters-panel .filters::-webkit-scrollbar {
+  width: var(--scrollbar-size);
+  height: var(--scrollbar-size);
+}
+
+.filters-panel .filters::-webkit-scrollbar-track {
+  border-radius: 100vw;
+  background: var(--scrollbar-color);
+}
+
+.filters-panel .filters::-webkit-scrollbar-track:hover {
+  --scrollbar-color: var(--colors-filter-tablet);
+}
+
+.filters-panel .filters::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-color);
+  border-radius: 100vw;
+}
+
+.filters-panel .filters::-webkit-scrollbar-thumb:hover {
+  --scrollbar-thumb-color: var(--colors-secondary);
+}
+
+.filters-panel .filters::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
 .filters-clear {
   background-color: transparent;
   color: var(--colors-primary);
   border: none;
   cursor: pointer;
-  margin-inline-start: auto;
 }
 
 .filters-clear:hover {

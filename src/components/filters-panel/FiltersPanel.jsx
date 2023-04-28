@@ -16,9 +16,11 @@ export const FiltersPanel = () => {
 
   return (
     <div className="filters-panel panel">
-      {filters.map(filter => (
-        <Filter key={filter} filter={filter} removable />
-      ))}
+      <div className="filters">
+        {filters.map(filter => (
+          <Filter key={filter} filter={filter} removable />
+        ))}
+      </div>
       <button className="filters-clear" onClick={handleClearFilters}>
         Clear
       </button>
