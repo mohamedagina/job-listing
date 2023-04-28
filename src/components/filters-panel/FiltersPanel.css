@@ -1,0 +1,22 @@
+.filters-panel {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filters-clear {
+  background-color: transparent;
+  color: var(--colors-primary);
+  border: none;
+  cursor: pointer;
+  margin-inline-start: auto;
+}
+
+.filters-clear:hover {
+  text-decoration: underline;
+}

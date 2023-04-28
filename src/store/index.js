@@ -15,6 +15,6 @@ export const store = configureStore({
 
 setupListeners(store.dispatch);
 
-export { addFilter, removeFilter } from './slices/filters-slice';
+export { addFilter, removeFilter, clearFilters } from './slices/filters-slice';
 
 export { useFetchJobsQuery } from './apis/jobs-api';
