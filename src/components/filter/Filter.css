@@ -1,0 +1,35 @@
+.filter {
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: var(--colors-primary);
+  background-color: var(--colors-filter-tablet);
+  border: none;
+  transition-property: color, background-color;
+  transition: var(--transitions-main);
+}
+
+.filter:not(.removable):hover {
+  background-color: var(--colors-primary);
+  color: #fff;
+  cursor: pointer;
+}
+
+.filter.removable {
+  padding: 0 0 0 0.5rem;
+}
+
+.filter-delete {
+  display: inline-block;
+  padding: 0.5rem;
+  margin-inline-start: 0.5rem;
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+  color: #fff;
+  background-color: var(--colors-primary);
+  cursor: pointer;
+  transition: background-color var(--transitions-main);
+}
+
+.filter-delete:hover {
+  background-color: var(--colors-secondary);
+}
